@@ -2,12 +2,25 @@ version: "3.9"
 
 services:
   backend:
-    build: ./backend
+    image: dharsha26/flask-backend:latest
     container_name: flask-backend
     ports:
       - "5000:5000"
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin123
+      POSTGRES_DB: appdb
+      DB_HOST: db
     depends_on:
       - db
+
+  frontend:
+    image: flask-frontend:1.0
+    container_name: flask-frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
 
   db:
     image: postgres:15
@@ -16,7 +29,6 @@ services:
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: admin123
       POSTGRES_DB: appdb
-      DB_HOST: db
     volumes:
       - db_data:/var/lib/postgresql/data
 
