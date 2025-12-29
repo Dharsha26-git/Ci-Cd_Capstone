@@ -1,10 +1,10 @@
-function loadData() {
+function callBackend() {
   fetch("http://backend:5000/")
-    .then(response => response.json())
+    .then(res => res.json())
     .then(data => {
       document.getElementById("result").innerText = data.message;
     })
-    .catch(error => {
+    .catch(() => {
       document.getElementById("result").innerText = "Backend not reachable";
     });
 }
