@@ -6,7 +6,7 @@ services:
       - "5000:5000"
 
   frontend:
-    image: dharsha12/flask-frontend:latest
+    build: ./frontend
     container_name: flask-frontend
     ports:
       - "8080:80"
