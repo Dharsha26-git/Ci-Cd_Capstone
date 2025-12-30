@@ -26,7 +26,7 @@ def home():
 
 @app.route("/health")
 def health():
-    return jsonify({"status": "UP"})
+    return jsonify({"status": "ok"})
 
 @app.route("/init")
 def init_db():
