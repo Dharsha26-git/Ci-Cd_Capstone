@@ -5,10 +5,28 @@
 </head>
 <body>
 
-<h1>Frontend Running</h1>
+<h2>Add Student</h2>
 
-<button id="check">Call Backend</button>
-<p id="result"></p>
+<input id="name" placeholder="Name" />
+<input id="course" placeholder="Course" />
+<button id="add">Add</button>
+
+<h2>Students List</h2>
+
+<table border="1" cellpadding="8">
+  <thead>
+    <tr>
+      <th>S.No</th>
+      <th>Name</th>
+      <th>Course</th>
+      <th>Actions</th>
+
+    </tr>
+  </thead>
+  <tbody id="table-body">
+    
+  </tbody>
+</table>
 
 <script src="app.js"></script>
 </body>
