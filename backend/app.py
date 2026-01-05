@@ -1,4 +1,5 @@
 import os
+import time
 import psycopg2
 from flask import Flask, jsonify, request
 from flask_cors import CORS
@@ -13,13 +14,22 @@ DB_USER = os.getenv("POSTGRES_USER", "admin")
 DB_PASSWORD = os.getenv("POSTGRES_PASSWORD", "admin123")
 
 
+
+
 def get_db_connection():
-    return psycopg2.connect(
-        host=DB_HOST,
-        database=DB_NAME,
-        user=DB_USER,
-        password=DB_PASSWORD
-    )
+    for i in range(10):  # retry 10 times
+        try:
+            return psycopg2.connect(
+                host=DB_HOST,
+                database=DB_NAME,
+                user=DB_USER,
+                password=DB_PASSWORD
+            )
+        except psycopg2.OperationalError:
+            print("DB not ready, retrying...")
+            time.sleep(3)
+
+    raise Exception("Database not reachable after retries")
 
 
 @app.route("/health")
