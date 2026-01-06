@@ -31,6 +31,7 @@ function loadData() {
     });
 }
 
+
 function editRow(id, name, course) {
   nameInput.value = name;
   courseInput.value = course;
@@ -89,4 +90,8 @@ function deleteRow(id) {
 }
 
 
+<<<<<<< HEAD
 loadData();
+=======
+loadData();
+>>>>>>> c7524d5b4a4ad95dd5b11a30d22c21ac539b1a14
