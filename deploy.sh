@@ -1,14 +1,12 @@
 #!/bin/bash
 
-echo "Shell script for ddeploying automatically"
-
-echo "Pulling Docker images..."
+echo "Pulling latest images..."
 docker compose pull
 
-echo "Stopping existing containers..."
+echo "Stopping old containers..."
 docker compose down
 
-echo "Starting containers"
+echo "Starting new containers..."
 docker compose up -d
 
-echo "Deployment completed successfully!"
+echo "Deployment completed"

@@ -17,7 +17,7 @@ DB_PASSWORD = os.getenv("POSTGRES_PASSWORD", "admin123")
 
 
 def get_db_connection():
-    for i in range(10):  # retry 10 times
+    for i in range(10):  
         try:
             return psycopg2.connect(
                 host=DB_HOST,

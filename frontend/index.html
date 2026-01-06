@@ -1,31 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CI/CD Capstone</title>
+  <title>Student App</title>
 </head>
 <body>
 
-<h2>Add Student</h2>
+<h2>Add / Edit Student</h2>
 
-<input id="name" placeholder="Name" />
-<input id="course" placeholder="Course" />
-<button id="add">Add</button>
+<input id="name" placeholder="Name">
+<input id="course" placeholder="Course">
+<button id="save">Add</button>
 
-<h2>Students List</h2>
+<h2>Students</h2>
 
 <table border="1" cellpadding="8">
   <thead>
     <tr>
-      <th>Serial.No</th>
+      <th>Id</th>
       <th>Name</th>
       <th>Course</th>
-      <th>Actions</th>
-
+      <th>Action</th>
     </tr>
   </thead>
-  <tbody id="table-body">
-    
-  </tbody>
+  <tbody id="table-body"></tbody>
 </table>
 
 <script src="app.js"></script>
