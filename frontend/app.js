@@ -3,7 +3,7 @@ const nameInput = document.getElementById("name");
 const courseInput = document.getElementById("course");
 const saveBtn = document.getElementById("save");
 
-let editId = null;   // holds id being edited
+let editId = null;   
 
 
 function loadData() {
