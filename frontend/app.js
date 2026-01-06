@@ -3,9 +3,9 @@ const nameInput = document.getElementById("name");
 const courseInput = document.getElementById("course");
 const saveBtn = document.getElementById("save");
 
-let editId = null;   // holds id being edited
+let editId = null;   
 
-/* ===== LOAD DATA ===== */
+
 function loadData() {
   fetch("http://13.60.98.204:5000/data")
     .then(res => res.json())
@@ -21,7 +21,7 @@ function loadData() {
           <td>${s.name}</td>
           <td>${s.course}</td>
           <td>
-            <button type="button" onclick="editRow(${s.id}, '${s.name}', '${s.course}')">✏️ Edit</button>
+            <button type="button" onclick="editRow(${s.id}, '${s.name}', '${s.course}')"> Edit</button>
             <button type="button" onclick="deleteRow(${s.id})">Delete</button>
           </td>
         `;
@@ -31,7 +31,6 @@ function loadData() {
     });
 }
 
-/* ===== EDIT ===== */
 function editRow(id, name, course) {
   nameInput.value = name;
   courseInput.value = course;
@@ -39,19 +38,19 @@ function editRow(id, name, course) {
   editId = id;
   saveBtn.textContent = "Update";
 
-  // hide row while editing
+  
   const row = document.getElementById(`row-${id}`);
   if (row) row.style.display = "none";
 }
 
-/* ===== ADD / UPDATE ===== */
+
 saveBtn.onclick = () => {
   const name = nameInput.value.trim();
   const course = courseInput.value.trim();
 
   if (!name || !course) return;
 
-  // UPDATE
+  
   if (editId !== null) {
     fetch(`http://13.60.98.204:5000/update/${editId}`, {
       method: "PUT",
@@ -66,7 +65,7 @@ saveBtn.onclick = () => {
       loadData();
     });
   }
-  // ADD
+  
   else {
     fetch("http://13.60.98.204:5000/add", {
       method: "POST",
@@ -81,7 +80,7 @@ saveBtn.onclick = () => {
   }
 };
 
-/* ===== DELETE ===== */
+
 function deleteRow(id) {
   fetch(`http://13.60.98.204:5000/delete/${id}`, {
     method: "DELETE"
@@ -89,5 +88,5 @@ function deleteRow(id) {
   .then(() => loadData());
 }
 
-/* ===== INIT ===== */
+
 loadData();
