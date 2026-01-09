@@ -64,6 +64,7 @@
   
         . Deployment: AWS EC2 (Ubuntu)
 
+---------------------------------------------------
 
 4. API ENDPOINTS:
 
@@ -75,3 +76,12 @@
 | PUT    | `/update/<id>` | Update existing record |
 | DELETE | `/delete/<id>` | Delete record          |
  
+-------------------------------------------------------
+
+5. Docker Images:
+
+    The following Docker images are built and pushed automatically:
+
+      . dharsha12/flask-backend:latest
+
+      . dharsha12/flask-frontend:latest
