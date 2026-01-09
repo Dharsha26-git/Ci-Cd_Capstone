@@ -163,6 +163,7 @@
       -> http://13.60.98.204:8080
 
     Backend API:
+    
       -> http://13.60.98.204:5000/data
 
 ---------------------
@@ -179,4 +180,4 @@
 
       . Updated application becomes live automatically
 
-  No manual commands are required on EC2 after CD is set up.
+    No manual commands are required on EC2 after CD is set up.
