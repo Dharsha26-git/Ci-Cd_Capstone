@@ -1,6 +1,6 @@
                                       CI-CD_Capstone Project – Docker & AWS EC2
-                                      
-        
+
+----------------------------------------------                                             
 1. Project Overview:
    
   This project demonstrates a complete CI/CD pipeline for a simple web application using Docker, GitHub Actions, and AWS EC2.
@@ -12,6 +12,8 @@
 
       -> The latest images are automatically deployed to EC2 (CD)
 
+-----------------------------------------
+      
 2. Application Architecture:
 
   -> Frontend:
@@ -44,6 +46,8 @@
 
         . Use Docker named volume for Data persistence
 
+---------------------------------------------------------
+
 3. Technology Stack:
 
         . Frontend: HTML, JavaScript
@@ -62,7 +66,7 @@
 
 
 4. API ENDPOINTS:
- --------------------------------------------------
+
 | Method | Endpoint       | Description            |
 | ------ | -------------- | ---------------------- |
 | GET    | `/health`      | Health check           |
@@ -70,4 +74,4 @@
 | POST   | `/add`         | Add new record         |
 | PUT    | `/update/<id>` | Update existing record |
 | DELETE | `/delete/<id>` | Delete record          |
- --------------------------------------------------
+ 
