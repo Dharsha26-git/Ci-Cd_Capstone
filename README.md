@@ -25,4 +25,16 @@
       . Runs inside an Nginx container
 
       . Exposed on port 8080
+      
+   -> Backend:
+
+       . Flask REST API
+
+       . Handles CRUD operations
+
+       . Connects to PostgreSQL database
+
+       . Runs inside a Python container
+
+       . Exposed on port 5000
 
