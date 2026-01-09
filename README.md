@@ -82,6 +82,6 @@
 
     The following Docker images are built and pushed automatically:
 
-      . dharsha12/flask-backend:latest
+        . dharsha12/flask-backend:latest
 
-      . dharsha12/flask-frontend:latest
+        . dharsha12/flask-frontend:latest
