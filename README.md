@@ -2,6 +2,7 @@
                                       
         
 1. Project Overview:
+   
   This project demonstrates a complete CI/CD pipeline for a simple web application using Docker, GitHub Actions, and AWS EC2.
   The application consists of a frontend, backend, and PostgreSQL database, all containerized and automatically deployed to an EC2 instance.
 
