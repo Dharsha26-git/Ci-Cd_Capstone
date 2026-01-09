@@ -86,14 +86,16 @@
 
         . dharsha12/flask-frontend:latest
 
+------------------------------------------------------
+
 6. Docker compose setup:
 
    The application is orchestrated using Docker Compose with three services:
 
-     . frontend
+       . frontend
 
-     . backend
+       . backend
 
-     . postgres
+       . postgres
 
 
