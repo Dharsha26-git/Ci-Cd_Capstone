@@ -38,7 +38,7 @@
 
        . Exposed on port 5000
 
-    -> Database:
+   -> Database:
 
         . PostgreSQL
 
