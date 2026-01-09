@@ -12,3 +12,16 @@
 
       -> The latest images are automatically deployed to EC2 (CD)
 
+2. Application Architecture:
+
+  -> Frontend:
+      . Static HTML and JavaScript
+
+      . Displays data in table format
+
+      . Allows users to add, update, and delete records
+
+      . Runs inside an Nginx container
+
+      . Exposed on port 8080
+
