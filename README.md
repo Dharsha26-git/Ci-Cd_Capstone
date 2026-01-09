@@ -1,4 +1,4 @@
-                                      CI/CD Capstone Project – Docker & AWS EC2
+                                      CI-CD_Capstone Project – Docker & AWS EC2
                                       
         
 1. Project Overview:
@@ -8,7 +8,7 @@
 
     Whenever code is pushed to GitHub:
 
-    -> Docker images are built and pushed to Docker Hub (CI)
+      -> Docker images are built and pushed to Docker Hub (CI)
 
-    -> The latest images are automatically deployed to EC2 (CD)
+      -> The latest images are automatically deployed to EC2 (CD)
 
