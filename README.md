@@ -135,4 +135,21 @@
    Important Note:
    
       The EC2 instance must be running for deployment to work.
+   
       If EC2 is stopped, the application will not be accessible.
+
+-----------------------------------------------------
+
+9. AWS EC2 Configuration:
+
+    OS: Ubuntu
+
+    Ports opened in Security Group:
+
+        . 8080 (Frontend)
+
+        . 5000 (Backend)
+
+        .  22 (SSH)
+
+    Docker and Docker Compose v2 are installed on the EC2 instance.
