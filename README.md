@@ -66,7 +66,7 @@
 
 ---------------------------------------------------
 
-4. API ENDPOINTS:
+4. API Endpoints:
 
 | Method | Endpoint       | Description            |
 | ------ | -------------- | ---------------------- |
@@ -85,3 +85,15 @@
         . dharsha12/flask-backend:latest
 
         . dharsha12/flask-frontend:latest
+
+6. Docker compose setup:
+
+   The application is orchestrated using Docker Compose with three services:
+
+     . frontend
+
+     . backend
+
+     . postgres
+
+
