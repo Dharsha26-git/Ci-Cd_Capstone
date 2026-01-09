@@ -59,3 +59,15 @@
         . Container Registry: Docker Hub
   
         . Deployment: AWS EC2 (Ubuntu)
+
+
+4. API ENDPOINTS:
+ --------------------------------------------------
+| Method | Endpoint       | Description            |
+| ------ | -------------- | ---------------------- |
+| GET    | `/health`      | Health check           |
+| GET    | `/data`        | Fetch all records      |
+| POST   | `/add`         | Add new record         |
+| PUT    | `/update/<id>` | Update existing record |
+| DELETE | `/delete/<id>` | Delete record          |
+ --------------------------------------------------
