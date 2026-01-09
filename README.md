@@ -15,6 +15,7 @@
 2. Application Architecture:
 
   -> Frontend:
+  
       . Static HTML and JavaScript
 
       . Displays data in table format
