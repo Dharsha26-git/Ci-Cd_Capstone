@@ -98,4 +98,16 @@
 
        . postgres
 
+7. Continous Integration (CI):
 
+    CI Workflow Responsibilities:
+
+        Triggered on push to the main branch
+
+        Builds Docker images for frontend and backend
+
+        Pushes images to Docker Hub
+
+    CI Tool:
+
+        GitHub Actions
