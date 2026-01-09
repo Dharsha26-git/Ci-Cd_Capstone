@@ -153,3 +153,30 @@
         .  22 (SSH)
 
     Docker and Docker Compose v2 are installed on the EC2 instance.
+
+------------------------------------------------------
+
+10. How to Access the Application:
+
+    Frontend:
+    
+      -> http://13.60.98.204:8080
+
+    Backend API:
+      -> http://13.60.98.204:5000/data
+
+---------------------
+
+11. Deployment Flow Summary:
+
+      . Developer pushes code to GitHub
+
+      . CI workflow builds and pushes Docker images to Docker Hub
+
+      . CD workflow logs into EC2 via SSH
+
+      . EC2 pulls latest images and restarts containers
+
+      . Updated application becomes live automatically
+
+  No manual commands are required on EC2 after CD is set up.
