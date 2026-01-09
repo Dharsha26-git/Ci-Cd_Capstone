@@ -38,3 +38,8 @@
 
        . Exposed on port 5000
 
+    -> Database:
+
+        . PostgreSQL
+
+        . Use Docker named volume for Data persistence
