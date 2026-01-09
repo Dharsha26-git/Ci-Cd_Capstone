@@ -119,10 +119,20 @@
 
     Deployment Strategy:
 
-      . GitHub Actions connects to AWS EC2 via SSH
+       . GitHub Actions connects to AWS EC2 via SSH
 
-      . Executes a deployment script on the EC2 instance
+       . Executes a deployment script on the EC2 instance
 
-      . Pulls latest Docker images
+       . Pulls latest Docker images
 
-      . Restarts containers using Docker Compose
+       . Restarts containers using Docker Compose
+
+   Deployment Scripts (deploy.sh):
+
+       . docker compose pull
+       . docker compose up -d
+   
+   Important Note:
+   
+      The EC2 instance must be running for deployment to work.
+      If EC2 is stopped, the application will not be accessible.
