@@ -113,3 +113,16 @@
     CI Tool:
 
         GitHub Actions
+---------------------------------------
+
+8. Continous Deployment (CD):
+
+    Deployment Strategy:
+
+      . GitHub Actions connects to AWS EC2 via SSH
+
+      . Executes a deployment script on the EC2 instance
+
+      . Pulls latest Docker images
+
+      . Restarts containers using Docker Compose
