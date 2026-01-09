@@ -46,16 +46,16 @@
 
 3. Technology Stack:
 
-  . Frontend: HTML, JavaScript
+    . Frontend: HTML, JavaScript
 
-  . Backend: Python, Flask
+    . Backend: Python, Flask
 
-  . Database: PostgreSQL
+    . Database: PostgreSQL
 
-  . Containerization: Docker, Docker Compose
+    . Containerization: Docker, Docker Compose
 
-  . CI/CD: GitHub Actions
+    . CI/CD: GitHub Actions
 
-  . Container Registry: Docker Hub
+    . Container Registry: Docker Hub
 
-  . Deployment: AWS EC2 (Ubuntu)
+    . Deployment: AWS EC2 (Ubuntu)
