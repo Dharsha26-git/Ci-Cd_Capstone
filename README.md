@@ -170,14 +170,43 @@
 
 11. Deployment Flow Summary:
 
-      . Developer pushes code to GitHub
+        . Developer pushes code to GitHub
 
-      . CI workflow builds and pushes Docker images to Docker Hub
+        . CI workflow builds and pushes Docker images to Docker Hub
 
-      . CD workflow logs into EC2 via SSH
+        . CD workflow logs into EC2 via SSH
 
-      . EC2 pulls latest images and restarts containers
+        . EC2 pulls latest images and restarts containers
 
-      . Updated application becomes live automatically
+        . Updated application becomes live automatically
 
     No manual commands are required on EC2 after CD is set up.
+
+-----------------------------
+
+12. What I have Learnt From this project:
+
+      . Dockerizing multi-tier applications
+
+      . Writing CI/CD pipelines using GitHub Actions
+
+      . Deploying containerized applications on AWS EC2
+
+      . Handling Docker Compose version compatibility
+
+      . Automating deployments safely without downtime
+
+--------------------------------------------------
+
+13. Conclusion:
+
+      This project demonstrates a real-world CI/CD workflow used in production environments.
+      It shows how application code changes can be automatically built, tested, and deployed with minimal manual intervention using             modern DevOps practices.
+
+-------------------------------------------
+
+Author : Dharsha Kunduru
+
+project : CI-CD_Capstone Project – Docker & AWS EC2
+
+Date : 09-01-2026
