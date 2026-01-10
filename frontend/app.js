@@ -7,7 +7,7 @@ let editId = null;
 
 
 function loadData() {
-  fetch("http://13.60.98.204:5000/data")
+  fetch("http://13.62.98.73:5000/data")
     .then(res => res.json())
     .then(data => {
       tableBody.innerHTML = "";
@@ -53,7 +53,7 @@ saveBtn.onclick = () => {
 
   
   if (editId !== null) {
-    fetch(`http://13.60.98.204:5000/update/${editId}`, {
+    fetch(`http://13.62.98.73:5000/update/${editId}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, course })
@@ -68,7 +68,7 @@ saveBtn.onclick = () => {
   }
   
   else {
-    fetch("http://13.60.98.204:5000/add", {
+    fetch("http://13.62.98.73:5000/add", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, course })
@@ -83,7 +83,7 @@ saveBtn.onclick = () => {
 
 
 function deleteRow(id) {
-  fetch(`http://13.60.98.204:5000/delete/${id}`, {
+  fetch(`http://13.62.98.73:5000/delete/${id}`, {
     method: "DELETE"
   })
   .then(() => loadData());
